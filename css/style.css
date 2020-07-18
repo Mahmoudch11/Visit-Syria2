@@ -1,0 +1,99 @@
+/*
+
+	Styled by: Ramez Istanbouli.
+
+*/
+body {
+    font-family: inherit;
+    font-weight: bold;
+}
+.slider-cover{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 220px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: fantasy;
+    text-shadow: 2px 2px black;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background-color: #c11235;
+    padding: 10px 30px;
+    display: inline-block;
+    color: black;
+    margin-top: 10px;
+    border-radius: 0px 10px;
+    
+}
+.carousel-caption a:hover{
+    text-decoration: none;
+    background-color: #bc1414;
+    border-color: black;
+    padding: 15px 40px;
+    transition-duration: .7s;
+    border-radius: 10px 0px;
+    color: white;
+    border-width: 1.3px;
+    border-style: solid;
+    border-color: black;
+}
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff;
+    
+}
+ .navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+
+}
+
+.scrolled {
+    background: #10caca !important;
+    transition-duration: 1.5s;
+}
+.card-img-top{
+    width: auto;
+    height: 350px;
+    float: none;
+    background: cover;
+}
+.section-title{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-title h3{
+    color: blueviolet;
+    text-shadow: 1.5px 1.5px black;
+}
