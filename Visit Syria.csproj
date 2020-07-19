@@ -87,7 +87,9 @@
     <Content Include="css\swiper.min.css" />
     <Content Include="css\themify-icons.css" />
     <Content Include="fonts\themify.svg" />
+    <Content Include="Footer.html" />
     <Content Include="Global.asax" />
+    <Content Include="Header.html" />
     <Content Include="hotels.aspx" />
     <Content Include="img\Card-1.jpg" />
     <Content Include="img\Card-2.jpg" />
