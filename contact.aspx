@@ -1,15 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Visit_Syria.contact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Visit_Syria.WebForm2" %>
 
-<!DOCTYPE html>
+<!-- #include file="~/header.html" -->
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+
+        <div style="height: 1000px;">
+		
+			<!-- Content -->
+		
+		</div>
+
+                <!-- footer -->
+ <!-- #include file="~/footer.html" -->

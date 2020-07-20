@@ -1,10 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Visit_Syria.WebForm2" %>
 
-
  <!-- #include file="~/header.html" -->
         
-
-
+                <!-- Slider -->
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -47,7 +45,8 @@
                   </a>
                 </div>
 
-                    <div class="">
+                <!-- Message -->
+                <div class="">
                     <div class="py-3 px-5">
                         <div class="section-title"><h3>Company Message</h3></div>
                             <p>
@@ -57,7 +56,9 @@
 			
                         </div>
                     </div>
-                    <div class="container">
+
+                <!-- Hot Places -->
+                <div class="container">
                         <div class="row text-right mt-4">
 			                <h2 class="text-center mx-auto my-4 section-title">Hot Places</h2>
 						        <div class="card-group">
@@ -90,5 +91,5 @@
                         </div> 
                     </div>
 
-
+                <!-- footer -->
  <!-- #include file="~/footer.html" -->
