@@ -62,7 +62,7 @@
 <!-- Hot Places -->
 <div class="container">
     <div class="row text-right mt-4">
-        <h2 class="text-center mx-auto my-4 section-title">Hot Places</h2>
+        <h3 class="text-center mx-auto my-4 section-title">Hot Places</h3>
         <div class="card-group">
             <div class="card">
                 <asp:ImageButton ID="ImageButton1" runat="server" class="card-img-top" src="img/Card-1.jpg" />

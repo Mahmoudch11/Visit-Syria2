@@ -13,5 +13,32 @@ namespace Visit_Syria
 
     public partial class WebForm2
     {
+
+        /// <summary>
+        /// MultiV1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View MultiV1;
+
+        /// <summary>
+        /// MultiV2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View MultiV2;
+
+        /// <summary>
+        /// MultiV3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View MultiV3;
     }
 }
