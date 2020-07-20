@@ -137,7 +137,6 @@
     <Content Include="fonts\themify.woff" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
-    <Content Include="style pass.css" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
