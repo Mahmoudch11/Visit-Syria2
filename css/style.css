@@ -27,6 +27,7 @@ body {
         margin-top: 25px;
         font-family: fantasy;
         text-shadow: 2px 2px black;
+
     }
 
     .carousel-caption p {
@@ -143,6 +144,7 @@ body {
 
 .page-footer h5 {
     font-weight: bold;
+    
 }
 
 .btn-primary {
@@ -159,11 +161,13 @@ body {
 .carousel-caption h5 span {
     color: #2c2c54;
     text-shadow: 1px 1px black;
+    background-color: #2c2c54;
 }
 
 .carousel-caption p span {
     color: #2c2c54;
     text-shadow: 1px 1px black;
+
 }
 
 .card-img {
@@ -185,14 +189,14 @@ body {
 .rad-btn {
     background-color: #706fd3;
     border-radius: 25px;
-    border-bottom-color: white;
+    
 }
     .rad-btn:active {
-        background-color: #40407a;
+        background-color: lawngreen;
     }
     .rad-btn:hover {
         background-color: #474787;
     }
 .btn:focus{
-    border-width: 0;
+    
 }

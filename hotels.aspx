@@ -13,7 +13,7 @@
 </div>
 
 <div class="container">
-    <asp:MultiView runat="server" activeViewIndex="0">
+    <asp:MultiView runat="server" activeViewIndex="0" ID="MultiView1">
         <asp:View runat="server" ID="MultiV1">
 
             <div class="card bg-dark text-white">
@@ -46,7 +46,7 @@
         </asp:View>
         <asp:View runat="server" ID="MultiV2">
             <div class="card bg-dark text-white">
-                <img src="img/hotelsImg/4season/4season-main.jpg" class="card-img" alt="...">
+                <img src="img/hotelsImg/4season/4season-three.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="card bg-dark text-white">
-                <img src="img/hotelsImg/4season/4season-main.jpg" class="card-img" alt="...">
+                <img src="img/hotelsImg/4season/4season-three.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -83,7 +83,7 @@
             </div>
 
             <div class="card bg-dark text-white">
-                <img src="img/hotelsImg/4season/4season-main.jpg" class="card-img" alt="...">
+                <img src="img/hotelsImg/4season/4season-three.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -103,7 +103,7 @@
 
     </asp:MultiView>
     <div class="container align-center">
-    <asp:Button runat="server" ID="MultiB1" Text="1" class="btn rad-btn"/>
+    <asp:Button runat="server" ID="MultiB1" Text="1" class="btn rad-btn" style="height: 26px; width: 21px"/>
     <asp:Button runat="server" ID="MultiB2" Text="2" class="btn rad-btn"/>
     <asp:Button runat="server" ID="MultiB3" Text="3" class="btn rad-btn"/>
     </div>
