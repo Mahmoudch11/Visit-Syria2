@@ -21,7 +21,8 @@ namespace Visit_Syria
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string checkuser = (@"select count(*) from [users] where username='" + TextBox1.Text + "'");
+            string checkuser = (@"select count(*) from [user] where username='" + user.Text + "'");
+
             SqlCommand com1 = new SqlCommand(checkuser, conn);
             int temp1 = Convert.ToInt32(com1.ExecuteScalar().ToString());
             conn.Close();
@@ -45,15 +46,18 @@ namespace Visit_Syria
                 {
                     // SqlConnection conn1 = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                     conn.Open();
-                    string insert = (@"INSERT INTO [users] 
-                                  (username,password) VALUES 
-                                  (@user,@pass)");
+                    string insert = (@"INSERT INTO [user] 
+                                  (username,password,gmail,firstans,secondans) VALUES 
+                                  (@user,@pass,@gmail,@first,@second)");
                     SqlCommand com2 = new SqlCommand(insert, conn);
-                    com2.Parameters.AddWithValue("@user", TextBox1.Text);
-                    com2.Parameters.AddWithValue("@pass", TextBox2.Text.GetHashCode());
+                    com2.Parameters.AddWithValue("@user", user.Text);
+                    com2.Parameters.AddWithValue("@pass", pass.Text.GetHashCode());
+                    com2.Parameters.AddWithValue("@gmail", gmail.Text);
+                    com2.Parameters.AddWithValue("@first", firstans.Text);
+                    com2.Parameters.AddWithValue("@second", secondans.Text);
                     com2.ExecuteNonQuery();
                     Response.Write("successful registeration ");
-                    Response.Redirect("login.aspx");
+                   // Response.Redirect("login.aspx");
 
                     conn.Close();
 
