@@ -80,7 +80,7 @@
 
                     <asp:TextBox ID="TextBox1" name="email" class="form-control" placeholder="Your e-mail address" runat="server"></asp:TextBox>
                     <div class="input-group-append">
-                        <asp:Button ID="Submit" runat="server" Text="Button" OnClick="Button1_Click" Class="btn btn-primary" />
+                       
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Your E-mail is Wrong" ControlToValidate="TextBox1" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </div>
                 </div>
