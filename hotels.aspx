@@ -13,7 +13,8 @@
 </div>
 
 <div class="container">
-    <asp:MultiView runat="server" activeViewIndex="0" ID="MultiView1">
+    
+    <asp:MultiView runat="server" activeViewIndex="0" ID="MultiView1" >
         <asp:View runat="server" ID="MultiV1">
 
             <div class="card bg-dark text-white">
@@ -102,6 +103,7 @@
         </asp:View>
 
     </asp:MultiView>
+     
     <div class="container align-center">
 
         <asp:Button runat="server" ID="MultiB1" Text="1" CssClass="btn rad-btn" OnClick="MultiB1_Click" />
