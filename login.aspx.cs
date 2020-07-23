@@ -37,6 +37,7 @@ namespace Visit_Syria
                 SqlCommand pass = new SqlCommand(checkpass, conn);
                 string password = pass.ExecuteScalar().ToString().Replace(" ", "");
                 //  int hash = TextBox2.Text.GetHashCode();
+                conn.Close();
                 if (password == TextBox2.Text.GetHashCode().ToString())
                 {
                     Session["new"] = TextBox1.Text;
