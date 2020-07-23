@@ -12,8 +12,25 @@ namespace Visit_Syria
 {
     public partial class WebForm3 : System.Web.UI.Page
     {
+        int i;
+        string x;
         protected void Page_Load(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string count= (@"select count(*) from [country] ");
+            SqlCommand com0 = new SqlCommand(count, conn);
+            int count1 = Convert.ToInt32(com0.ExecuteScalar());
+
+            for ( i=1;i<=count1;i++) {
+                string getcountry = (@"select country from [country] where Id='" + i + "'");
+                SqlCommand com1 = new SqlCommand(getcountry, conn);
+                x = com1.ExecuteScalar().ToString();
+                DropDownList1.Items.Add(x);
+               
+            }
+            conn.Close();
+           
 
         }
 
@@ -47,14 +64,15 @@ namespace Visit_Syria
                     // SqlConnection conn1 = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                     conn.Open();
                     string insert = (@"INSERT INTO [user] 
-                                  (username,password,gmail,firstans,secondans) VALUES 
-                                  (@user,@pass,@gmail,@first,@second)");
+                                  (username,password,gmail,firstans,secondans,country) VALUES 
+                                  (@user,@pass,@gmail,@first,@second,@country)");
                     SqlCommand com2 = new SqlCommand(insert, conn);
                     com2.Parameters.AddWithValue("@user", user.Text);
                     com2.Parameters.AddWithValue("@pass", pass.Text.GetHashCode());
                     com2.Parameters.AddWithValue("@gmail", gmail.Text);
                     com2.Parameters.AddWithValue("@first", firstans.Text);
                     com2.Parameters.AddWithValue("@second", secondans.Text);
+                    com2.Parameters.AddWithValue("@country", DropDownList1.SelectedIndex+1);
                     com2.ExecuteNonQuery();
                     Response.Write("successful registeration ");
                    // Response.Redirect("login.aspx");
