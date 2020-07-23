@@ -103,9 +103,10 @@
 
     </asp:MultiView>
     <div class="container align-center">
-    <asp:Button runat="server" ID="MultiB1" Text="1" class="btn rad-btn" style="height: 26px; width: 21px" OnClick="MultiB1_Click" />
-    <asp:Button runat="server" ID="MultiB2" Text="2" class="btn rad-btn" OnClick="MultiB2_Click" style="width: 21px"/>
-    <asp:Button runat="server" ID="MultiB3" Text="3" class="btn rad-btn" OnClick="MultiB3_Click"/>
+
+    <asp:Button runat="server" ID="MultiB1" Text="1" CssClass="btn rad-btn" OnClick="MultiB1_Click" />
+    <asp:Button runat="server" ID="MultiB2" Text="2" CssClass="btn rad-btn" OnClick="MultiB2_Click"/>
+    <asp:Button runat="server" ID="MultiB3" Text="3" CssClass="btn rad-btn" OnClick="MultiB3_Click"/>
     </div>
 </div>
 
