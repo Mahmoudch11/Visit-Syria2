@@ -4,14 +4,14 @@
         <div class="container pt-3 pb-3 pt-md-5">
             <div class="row">
 
-                <div class="col-12 col-md-4">
-                    <img src=".">
-                    <div class="mr-4 text-center text-left-sm">
-                        <p class="mt-3">
-                            Our Slogan here!!
-                        </p>
-                    </div>
+            <div class="col-12 col-md-4">
+                <img src=".">
+                <div class="mr-4 text-center text-left-sm">
+                    <p class="mt-3">
+                        Our Slogan here!!
+                    </p>
                 </div>
+            </div>
 
                 <div class="col-12 col-md-4 mt-4 mt-md-0 site-links">
                     <h5 class="mb-3">Site Links</h5>
@@ -79,12 +79,12 @@
                     <input type="hidden" name="_token" value="SeHvhIsq9NhXdIZp4OIYKSZSCjtMmkUwqHN3kM2G">
                     <div class="input-group input-group-sm my-3 ltr">
 
-                        <asp:TextBox ID="TextBox1" name="email" class="form-control" placeholder="Your e-mail address" runat="server"></asp:TextBox>
-                        <div class="input-group-append">
-
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Your E-mail is Wrong" ControlToValidate="TextBox1" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                        </div>
+                    <asp:TextBox ID="TextBox1" name="email" class="form-control" placeholder="Your e-mail address" runat="server"></asp:TextBox>
+                    <div class="input-group-append">
+                       
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Your E-mail is Wrong" ControlToValidate="TextBox1" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </div>
+                </div>
 
                 </div>
             </div>
@@ -121,6 +121,17 @@
 
 
 
+</script>
+
+<!-- Toggle Logo color Function -->
+<script>
+    $(window).scroll(function () {
+        var value = $(this).scrollTop();
+        if (value > 730)
+            $("#ImageButton4").attr("src", "img/logo-white.png");
+        else
+            $("#ImageButton4").attr("src", "img/logo.png");
+    });
 </script>
 </body>
 </html>

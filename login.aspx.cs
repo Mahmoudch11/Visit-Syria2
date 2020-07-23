@@ -26,17 +26,18 @@ namespace Visit_Syria
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string check = (@"select count(*) from [users] where username='" + TextBox1.Text + "'");
+            string check = (@"select count(*) from [user] where username='" + TextBox1.Text + "'");
             SqlCommand com = new SqlCommand(check, conn);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             conn.Close();
             if (temp == 1)
             {
                 conn.Open();
-                string checkpass = (@"select password from [users] where username='" + TextBox1.Text + "'");
+                string checkpass = (@"select password from [user] where username='" + TextBox1.Text + "'");
                 SqlCommand pass = new SqlCommand(checkpass, conn);
                 string password = pass.ExecuteScalar().ToString().Replace(" ", "");
                 //  int hash = TextBox2.Text.GetHashCode();
+                conn.Close();
                 if (password == TextBox2.Text.GetHashCode().ToString())
                 {
                     Session["new"] = TextBox1.Text;
@@ -48,6 +49,7 @@ namespace Visit_Syria
                 {
 
                     Response.Write("username or password is not correct");
+                  //  Response.Write(password.GetHashCode());
                 }
 
             }
