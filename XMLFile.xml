@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/images/AdventureWorks.gif</ImageUrl>
+    <NavigateUrl>http://www.adventure-works.com</NavigateUrl>
+    <AlternateText>Ad for Adventure Works Web site</AlternateText>
+    <Impressions>100</Impressions>
+    <Keyword>AdventureWorks</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/Contoso.gif</ImageUrl>
+    <NavigateUrl>http://www.contoso.com/</NavigateUrl>
+    <AlternateText>Ad for Contoso Ltd. Web site</AlternateText>
+    <Impressions>100</Impressions>
+    <Keyword>Contoso</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/NorthwindTraders.gif</ImageUrl>
+    <NavigateUrl>http://www.northwindtraders.com</NavigateUrl>
+    <AlternateText>Ad for Northwind Traders Web site</AlternateText>
+    <Impressions>100</Impressions>
+    <Keyword>Northwind</Keyword>
+
+  </Ad>
+</Advertisements>
+

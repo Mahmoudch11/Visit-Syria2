@@ -1,17 +1,19 @@
 ﻿<!--- Footer ---->
     <footer class="page-footer">
-        <asp:AdRotator runat="server"></asp:AdRotator>
+        
         <div class="container pt-3 pb-3 pt-md-5">
             <div class="row">
 
-            <div class="col-12 col-md-4">
-                <asp:ImageButton ID="ImageButton5" runat="server" Cssclass="footer-logo" src="img/logo-white.png" PostBackURL="index.aspx" />
-                <div class="mr-4 text-center text-left-sm">
-                    <p class="mt-3">
-                        Want Adventure, Visit Syria..
-                    </p>
+                <div class="col-12 col-md-4">
+                    <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" />
+                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/XMLFile.xml"></asp:XmlDataSource>
+                    <asp:ImageButton ID="ImageButton5" runat="server" Cssclass="footer-logo" src="img/logo-white.png" PostBackURL="index.aspx" />
+                    <div class="mr-4 text-center text-left-sm">
+                        <p class="mt-3">
+                            Want Adventure, Visit Syria..
+                        </p>
+                    </div>
                 </div>
-            </div>
 
                 <div class="col-12 col-md-4 mt-4 mt-md-0 site-links">
                     <h5 class="mb-3">Site Links</h5>
