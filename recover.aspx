@@ -37,11 +37,11 @@
 
                	<div class="center">
 <div class="content ">
-	If you don't want to change the password click done<br /><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox><asp:Label ID="Label3" runat="server" Text="Enter the recieved password"></asp:Label><br />
-	<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox><asp:Label ID="Label4" runat="server" Text="Enter the new password"></asp:Label><br />
-    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox><asp:Label ID="Label5" runat="server" Text="confirm the password"></asp:Label>
+	If you don't want to change the password click done<br /><asp:TextBox ID="recievedpass" runat="server"></asp:TextBox><asp:Label ID="Label3" runat="server" Text="Enter the recieved password"></asp:Label><br />
+	<asp:TextBox ID="pass" runat="server"></asp:TextBox><asp:Label ID="Label4" runat="server" Text="Enter the new password"></asp:Label><br />
+    <asp:TextBox ID="confirm" runat="server"></asp:TextBox><asp:Label ID="Label5" runat="server" Text="confirm the password"></asp:Label>
     
-    <asp:Button ID="Button3" runat="server" Text="Button" class="btn" OnClick="Button3_Click" /><asp:Button ID="Button4" runat="server" Text="Button" class="btn" OnClick="Button3_Click" />
+    <asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button3_Click" />
 </div>
 </div>
         </asp:View>
