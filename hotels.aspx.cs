@@ -32,6 +32,11 @@ namespace Visit_Syria
             MultiView1.ActiveViewIndex = 2;
         }
 
-        
+    
+
+        protected void res_Click(object sender, EventArgs e)
+        {
+            if (Session["new"] == null) { Response.Redirect("login.aspx"); } else Response.Redirect("resrvation.aspx");
+        }
     }
 }
