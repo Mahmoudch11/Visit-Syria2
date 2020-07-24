@@ -138,6 +138,7 @@
     <Content Include="fonts\themify.woff" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="resrvation.aspx" />
     <Content Include="XMLFile.xml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -285,6 +286,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resrvation.aspx.cs">
+      <DependentUpon>resrvation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resrvation.aspx.designer.cs">
+      <DependentUpon>resrvation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
