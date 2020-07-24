@@ -84,6 +84,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\flaticon.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\styleProduct.css" />
     <Content Include="css\swiper.min.css" />
     <Content Include="css\themify-icons.css" />
     <Content Include="fonts\themify.svg" />
@@ -96,6 +97,8 @@
     <Content Include="img\Card-3.jpg" />
     <Content Include="info.aspx" />
     <Content Include="js\JavaScript.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.zoom.min.js" />
     <Content Include="navbar.html" />
     <Content Include="img\01-slide.jpg" />
     <Content Include="img\02-slide.jpg" />
@@ -104,6 +107,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.5.1.js" />
     <Content Include="places.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="recover.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -257,6 +261,13 @@
     </Compile>
     <Compile Include="places.aspx.designer.cs">
       <DependentUpon>places.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="index.aspx.cs">

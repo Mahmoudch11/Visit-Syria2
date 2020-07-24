@@ -65,7 +65,7 @@
         <h3 class="text-center mx-auto my-4 section-title">Hot Places</h3>
         <div class="card-group">
             <div class="card">
-                <asp:ImageButton ID="ImageButton1" runat="server" class="card-img-top" src="img/Card-1.jpg" />
+                <asp:ImageButton ID="ImageButton1" runat="server" class="card-img-top" src="img/Card-1.jpg" PostBackURL="product.aspx"/>
                 <div class="card-body">
                     <h5 class="card-title">Aleppo Citadel</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="img/Card-2.jpg" class="card-img-top" alt="Card" />
+                <asp:ImageButton ID="ImageButton2" runat="server" class="card-img-top" src="img/Card-2.jpg" PostBackURL="product.aspx"/>
                 <div class="card-body">
                     <h5 class="card-title">Golden Sands Hotel</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="img/Card-3.jpg" class="card-img-top" alt="Card" />
+                <asp:ImageButton ID="ImageButton3" runat="server" class="card-img-top" src="img/Card-3.jpg" PostBackURL="product.aspx"/>
                 <div class="card-body">
                     <h5 class="card-title">Mashta Al-Helou</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
